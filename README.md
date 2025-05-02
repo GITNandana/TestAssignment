@@ -5,25 +5,24 @@ A .NET Core class library for fetching and managing user data from the public Re
 
 **Features**
 
- API client using HttpClient & IHttpClientFactory
-Clean architecture (Domain, Infrastructure layers)
-Async/await and proper error handling
-Pagination handling to fetch all users
-Custom exceptions (UserNotFoundException, ApiException, etc.)
-In-memory caching with configurable expiration (using IMemoryCache)
-Extensible retry policy via Polly (commented or configured)
-Strongly typed configuration (using Options pattern)
-Unit tests with mocked dependencies
-Optional demo via console app
+#API client using HttpClient & IHttpClientFactory
+#Clean architecture (Domain, Infrastructure layers)
+#Async/await and proper error handling
+#Pagination handling to fetch all users
+#Custom exceptions (UserNotFoundException, ApiException, etc.)
+#In-memory caching with configurable expiration (using IMemoryCache)
+#Extensible retry policy via Polly (commented or configured)
+#Strongly typed configuration (using Options pattern)
+#Unit tests with mocked dependencies
+#Optional demo via console app
 
 **Project Structure**
 
-ReqUserService.sln
-│
-├── ReqUserService.Domain         # Core models,#Interfaces (e.g., User,Interfaces and service contracts)
-├── ReqUserService.Infrastructure # API client, caching, configuration
-├── ReqUserServiceAPIConsole    # Sample app showing usage
-└── ReqUserService.Tests          # Unit tests using xUnit + Moq
+# ReqUserService.sln
+# ReqUserService.Domain         # Core models,#Interfaces (e.g., User,Interfaces and service contracts)
+# ReqUserService.Infrastructure # API client, caching, configuration
+# ReqUserService.ConsoleApp    # Sample app showing usage
+#  ReqUserService.Tests          # Unit tests using xUnit + Moq
 **Setup Instructions**
 Clone the repo
 
